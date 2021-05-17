@@ -231,6 +231,16 @@ input[type='text']{
     width: 80%;
     height: 40px;
 }
+.footer-email .left{
+    width: 85%;
+}
+.footer-email .left p{
+    color: hsla(240, 75%, 98%,0.8);
+}
+.footer-email .left h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
 
 .email-error2{
@@ -238,6 +248,55 @@ input[type='text']{
 }
 
 /* body info input */
+
+/* footer */
+
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    width: 100%;
+    min-height: 400px;
+    display: grid;
+    align-items: center;
+    
+}
+footer .footer-img{
+    filter: invert(90%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(100%);
+    margin-left: 4rem;
+}
+footer .footer-content{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+    
+}
+footer .footer-content .social-icons{
+    display: flex
+}
+footer .footer-content .social-icons li i{
+    border-radius: 50%;
+    padding: 0.5rem;
+    border: 1px solid white;
+}
+footer .footer-content .social-icons li:nth-child(2){
+    padding: 0.5rem 1rem;
+}
+footer .footer-content > * {
+    list-style: none;
+}
+footer .footer-content ul li{
+    padding: 0.5rem 0;
+}
+footer .footer-content ul {
+    justify-self: center;
+}
+footer .footer-content ul li i img{
+    padding-right: 0.4rem;
+}
+
+/* footer */
+
 
 /*utilities*/
 h1{
