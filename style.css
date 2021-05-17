@@ -39,11 +39,12 @@ body{
 .showcase{
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 1.4rem 2rem;
+    padding: 2rem 2rem;
 }
 .showcase .right{
     height: 100%;
     width: 100%;
+    padding: 1rem;
 
 }
 .showcase .right img{
@@ -82,11 +83,12 @@ body{
     margin: 0;
 }
 .email-error1 p{
-    display: none;
+    visibility: hidden;
     padding-top: 0;
     margin-top: 0.2rem;
     color: red;
 }
+
 input[type='text']{
     border: 0;
     height: 2rem;
@@ -120,10 +122,127 @@ input[type='text']{
 .roundborder{
     padding: 0;
     width: 100%;
-    margin-bottom: 0;
+    margin:auto;
+    position: absolute;
+    top: -12%;
+    right: 0;
+    left: 0;
 }
 .body-show{
     background-color:hsl(240, 75%, 98%);
+    position: relative;
+    margin-top: 10rem;
+    width: 100%;
+}
+.body-show-in{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 2rem;
+}
+.body-show-in .right img, .body-show-in .left{
+    width:100%;
+}
+.body-show-in .left p{
+    font-weight: 400;
+}
+.link-show a{
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    padding-right: 0.4rem;
+}
+.link-show {
+    width: 27%;
+    display: flex;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    justify-content: center;
+}
+.link-show img{
+    padding-top: 0.25rem;
+}
+.body-show-in .left p{
+    width: 75%;
+}
+.body-show-in .left h1{
+    width: 100%;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.card{
+    margin: 1.5rem 0;
+    background-color: white;
+    width:340px;
+    padding: 1rem;
+    box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.08);
+    border-radius: 5px;
+}
+.card p{
+    min-width: 100%;
 }
 
+.card .info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.info img{
+    max-width: 55px;
+    max-height: 55px;
+    border-radius: 50%;
+}
+.info .name-job{
+    padding-left: 0.6rem;
+}
+.info .name-job .name{
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.info .name-job .job{
+    margin-top: 3px;
+    font-size: 0.8rem;
+}
 /* body content  */
+
+/* body info input */
+
+.footer-email{
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+}
+.footer-email > *{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.footer-email .right .email{
+    display: flex;
+    flex-direction: column;
+}
+.footer-email .right .email .btn{
+    width: 30%;
+}
+
+.footer-email .right .email input{
+    width: 80%;
+    height: 40px;
+}
+
+
+.email-error2{
+    font-size: 00.8rem;
+}
+
+/* body info input */
+
+/*utilities*/
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+.email-error1 p, .email-error2{
+    visibility: hidden;
+}
