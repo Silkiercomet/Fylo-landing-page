@@ -83,7 +83,7 @@ body{
     margin: 0;
 }
 .email-error1 p{
-    visibility: hidden;
+    display: none;
     padding-top: 0;
     margin-top: 0.2rem;
     color: red;
@@ -127,6 +127,9 @@ input[type='text']{
     top: -12%;
     right: 0;
     left: 0;
+}
+.roundborder-mobile{
+    display: none;
 }
 .body-show{
     background-color:hsl(240, 75%, 98%);
@@ -304,4 +307,127 @@ h1{
 }
 .email-error1 p, .email-error2{
     visibility: hidden;
+}
+/* media queries */
+
+@media (max-width:1100px){
+    .roundborder{
+        top: -9%;
+    }
+}
+@media (max-width:830px){
+    .wrapper > *{
+        padding: 1rem ;
+    }
+    .nav-options ul li:nth-child(2){
+        padding: 0 0.5rem ;
+    }
+    .showcase{
+        display:flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+        text-align: center;
+    }
+    .email{
+        flex-direction: column;
+    }
+    .email-error1{
+        width: 100%;
+        padding-right: 0 ;
+        margin-bottom: 1rem;
+    }
+    .btn{
+        padding: 0 1rem;
+        height: 3rem;
+        width: 100%;
+        margin: 0;
+    }
+    .roundborder{
+        display: none;
+    }
+    .roundborder-mobile{
+        display: flex;
+        padding: 0;
+        width: 100%;
+        margin:auto;
+        position: absolute;
+        top: -8%;
+        right: 0;
+        left: 0;
+    }
+    .body-show-in{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .body-show-in .left p{
+        width: 100%;
+    }
+    .link-show {
+        margin: auto;
+    }
+    .card{
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+    .card .quote{
+        width: 100%;
+        display: flex;
+        padding-left: 0.2rem;
+        
+    }
+    .footer-email{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .footer-email .left{
+        width: 100%;
+    }
+    .footer-email .right .email .btn{
+        width: 100%;
+    }
+    
+    .footer-email .right .email input{
+        width: 100%;
+    }
+    footer{
+        min-height: auto;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+    footer .footer-img {
+        padding-top: 1rem;
+        margin-left: 2rem;
+    }
+    footer .footer-content{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        grid-template-columns: 1fr;
+        
+    }
+    footer .footer-content ul {
+        justify-self: start;
+    }
+    footer .footer-content .social-icons{
+        justify-self: center;
+    }
+
+
+}
+@media (max-width:530px){
+    .roundborder-mobile{
+
+        top: -5%;
+
+    }
+    .card{
+        width: 100%;
+    }
 }
